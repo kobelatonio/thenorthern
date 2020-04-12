@@ -1,0 +1,1284 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+.clr::after
+{
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/***** NAVIGATION BAR *****/
+
+nav {
+    padding: 15px 20px;
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav.black {
+    border-bottom: 1px solid #232323;
+}
+
+header ul {
+    padding-top: 16px;
+    float: right;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 10px 20px 20px;
+    color: #fff;
+    transition: all .4s ease;
+    font-weight: 700;
+    font-style: italic;
+}
+
+header ul li a.black {
+    color: #232323;
+}
+
+header ul li a:hover {
+    color: #CCCCCC;
+}
+
+/***** HEADER *****/
+
+.header-index {
+    height: 1900px;
+    position: relative;
+    clear: both;
+}
+
+#video-index {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+img.logo-header, header div.description {
+    width: 750px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+header div.description-products {
+    width: 640px;
+    padding-left: 50px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    text-align: left;
+}
+
+img.logo-header {
+    top: 280px;
+}
+
+header div.description {
+    top: 450px;
+    color: white;
+    text-align: right;
+}
+
+header div.description p {
+    letter-spacing: 5px;
+    font-style: italic;
+    font-size: 18px;
+}
+
+/***** DIVS *****/
+
+#main {
+    margin-top: 56%;
+}
+
+.furniture {
+    height: 700px;
+    background: #4E6F7F;
+}
+
+.container-furniture {
+    background: #4E6F7F;
+    width: 1165px;
+    margin: 0 auto;
+}
+
+.container-furniture div.left {
+    width: 58%;
+    float: left;
+    position: relative;
+    height: 700px;
+}
+
+.container-furniture div.right {
+    width: 36%;
+    margin-left: 3%;
+    margin-right: 3%;
+    float: left;
+    padding: 170px 0 100px 100px;
+    text-align: right;
+}
+
+div.feat-furniture {
+    width: 100%;
+}
+
+div.feat-furniture .left {
+    width: 44%;
+    float: left;
+    padding-top: 57%;
+    background-image: url('../IMG/index/outline-background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div.feat-furniture .right {
+    width: 38%;
+    margin: 0 9%;
+    float: left;
+}
+
+.lighting2 {
+    height: 700px;
+    background: #4E6F7F;
+}
+
+.container-lighting {
+    background: #4E6F7F;
+    width: 100%;
+}
+
+.container-lighting div.right {
+    width: 50%;
+    float: left;
+    position: relative;
+    height: 700px;
+    background-image: url('../IMG/index/lighting-right.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-lighting div.left {
+    width: 24%;
+    margin-left: 13%;
+    margin-right: 13%;
+    float: left;
+    text-align: right;
+    padding-top: 150px;
+}
+
+div.feat-lighting {
+    width: 100%;
+}
+
+div.feat-lighting .right {
+    width: 48%;
+    float: left;
+    padding-top: 57%;
+    background-image: url('../IMG/index/pendant-background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div.feat-lighting .left {
+    width: 34%;
+    margin: 0 9%;
+    float: left;
+}
+
+.accessories2 {
+    height: 700px;
+    background: #4E6F7F;
+}
+
+.container-accessories {
+    background: #4E6F7F;
+    width: 100%;
+}
+
+.container-accessories div.left {
+    width: 41%;
+    float: left;
+    position: relative;
+    height: 700px;
+    background-image: url('../IMG/index/accessories-left.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-accessories div.right {
+    width: 33%;
+    margin-left: 13%;
+    margin-right: 13%;
+    float: left;
+    text-align: right;
+    padding-top: 150px;
+}
+
+div.feat-accessories {
+    width: 100%;
+}
+
+div.feat-accessories .right {
+    width: 44%;
+    float: left;
+    padding-top: 57%;
+    background-image: url('../IMG/index/twine-background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div.feat-accessories .left {
+    width: 34%;
+    margin: 0 11%;
+    float: left;
+}
+
+div.designers {
+    width: 100%;
+    background-color: #4E6F7F;
+    padding: 80px 0;
+}
+
+div.container-designers {
+    width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+    background-image: url('../IMG/index/designers.jpg');
+    background-position: left;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+div.box-designers {
+    width: 545px;
+    position: absolute;
+    text-align: right;
+    right: 0;
+    bottom: 0;
+}
+
+.beginning {
+    height: 700px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.beginning div.left {
+    width: 37%;
+    margin-left: 9%;
+    margin-right: 9%;
+    float: left;
+    text-align: right;
+    padding-top: 180px;
+}
+
+.locations {
+    width: 100%;
+    height: 800px;
+    background-image: url('../IMG/index/locations.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+}
+
+.container-locations {
+    width: 180px;
+    height: 150px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*** end of index ***/
+
+section#products, section.designers {
+    padding: 50px 100px;
+}
+
+section#products {
+    padding: 50px 100px;
+    margin-top: 60%;
+}
+
+div.column, div.column-side {
+    width: 30%;
+    float: left;
+    padding-top: 30%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+}
+
+div.column {
+    margin-right: 5%;
+}
+
+/* furnitures */
+
+div.column1 { background-image: url('../IMG/furniture/column1.png'); }
+div.column1:hover { background-image: url('../IMG/furniture/column1-hover.png'); }
+
+div.column2 { background-image: url('../IMG/furniture/column2.png'); }
+div.column2:hover { background-image: url('../IMG/furniture/column2-hover.png'); }
+
+div.column3 { background-image: url('../IMG/furniture/column3.png'); }
+div.column3:hover { background-image: url('../IMG/furniture/column3-hover.png'); }
+
+div.column4 { background-image: url('../IMG/furniture/column4.png'); }
+div.column4:hover { background-image: url('../IMG/furniture/column4-hover.png'); }
+
+div.column5 { background-image: url('../IMG/furniture/column5.png'); }
+div.column5:hover { background-image: url('../IMG/furniture/column5-hover.png'); }
+
+div.column6 { background-image: url('../IMG/furniture/column6.png'); }
+div.column6:hover { background-image: url('../IMG/furniture/column6-hover.png'); }
+
+div.column7 { background-image: url('../IMG/furniture/column7.png'); }
+div.column7:hover { background-image: url('../IMG/furniture/column7-hover.png'); }
+
+div.column8 { background-image: url('../IMG/furniture/column8.png'); }
+div.column8:hover { background-image: url('../IMG/furniture/column8-hover.png'); }
+
+div.column9 { background-image: url('../IMG/furniture/column9.png'); }
+div.column9:hover { background-image: url('../IMG/furniture/column9-hover.png'); }
+
+div.column10 { background-image: url('../IMG/furniture/column10.png'); }
+div.column10:hover { background-image: url('../IMG/furniture/column10-hover.png'); }
+
+div.column11 { background-image: url('../IMG/furniture/column11.png'); }
+div.column11:hover { background-image: url('../IMG/furniture/column11-hover.png'); }
+
+div.column12 { background-image: url('../IMG/furniture/column12.png'); }
+div.column12:hover { background-image: url('../IMG/furniture/column12-hover.png'); }
+
+div.column13 { background-image: url('../IMG/furniture/column13.png'); }
+div.column13:hover { background-image: url('../IMG/furniture/column13-hover.png'); }
+
+div.column14 { background-image: url('../IMG/furniture/column14.png'); }
+div.column14:hover { background-image: url('../IMG/furniture/column14-hover.png'); }
+
+div.column15 { background-image: url('../IMG/furniture/column15.png'); }
+div.column15:hover { background-image: url('../IMG/furniture/column15-hover.png'); }
+
+div.column16 { background-image: url('../IMG/furniture/column16.png'); }
+div.column16:hover { background-image: url('../IMG/furniture/column16-hover.png'); }
+
+div.column17 { background-image: url('../IMG/furniture/column17.png'); }
+div.column17:hover { background-image: url('../IMG/furniture/column17-hover.png'); }
+
+div.column18 { background-image: url('../IMG/furniture/column18.png'); }
+div.column18:hover { background-image: url('../IMG/furniture/column18-hover.png'); }
+
+div.column19 { background-image: url('../IMG/furniture/column19.png'); }
+div.column19:hover { background-image: url('../IMG/furniture/column19-hover.png'); }
+
+div.column20 { background-image: url('../IMG/furniture/column20.png'); }
+div.column20:hover { background-image: url('../IMG/furniture/column20-hover.png'); }
+
+div.column21 { background-image: url('../IMG/furniture/column21.png'); }
+div.column21:hover { background-image: url('../IMG/furniture/column21-hover.png'); }
+
+div.column22 { background-image: url('../IMG/furniture/column22.png'); }
+div.column22:hover { background-image: url('../IMG/furniture/column22-hover.png'); }
+
+div.column23 { background-image: url('../IMG/furniture/column23.png'); }
+div.column23:hover { background-image: url('../IMG/furniture/column23-hover.png'); }
+
+div.column24 { background-image: url('../IMG/furniture/column24.png'); }
+div.column24:hover { background-image: url('../IMG/furniture/column24-hover.png'); }
+
+div.column25 { background-image: url('../IMG/furniture/column25.png'); }
+div.column25:hover { background-image: url('../IMG/furniture/column25-hover.png'); }
+
+div.column26 { background-image: url('../IMG/furniture/column26.png'); }
+div.column26:hover { background-image: url('../IMG/furniture/column26-hover.png'); }
+
+div.column27 { background-image: url('../IMG/furniture/column27.png'); }
+div.column27:hover { background-image: url('../IMG/furniture/column27-hover.png'); }
+
+div.column28 { background-image: url('../IMG/furniture/column28.png'); }
+div.column28:hover { background-image: url('../IMG/furniture/column28-hover.png'); }
+
+div.column29 { background-image: url('../IMG/furniture/column29.png'); }
+div.column29:hover { background-image: url('../IMG/furniture/column29-hover.png'); }
+
+div.column30 { background-image: url('../IMG/furniture/column30.png'); }
+div.column30:hover { background-image: url('../IMG/furniture/column30-hover.png'); }
+
+div.column31 { background-image: url('../IMG/furniture/column31.png'); }
+div.column31:hover { background-image: url('../IMG/furniture/column31-hover.jpg'); }
+
+div.column32 { background-image: url('../IMG/furniture/column32.png'); }
+div.column32:hover { background-image: url('../IMG/furniture/column32-hover.jpg'); }
+
+div.column33 { background-image: url('../IMG/furniture/column33.png'); }
+div.column33:hover { background-image: url('../IMG/furniture/column33-hover.jpg'); }
+
+div.column34 { background-image: url('../IMG/furniture/column34.png'); }
+div.column34:hover { background-image: url('../IMG/furniture/column34-hover.jpg'); }
+
+div.column35 { background-image: url('../IMG/furniture/column35.png'); }
+div.column35:hover { background-image: url('../IMG/furniture/column35-hover.jpg'); }
+
+div.column36 { background-image: url('../IMG/furniture/column36.png'); }
+div.column36:hover { background-image: url('../IMG/furniture/column36-hover.jpg'); }
+
+div.column37 { background-image: url('../IMG/furniture/column37.png'); }
+div.column37:hover { background-image: url('../IMG/furniture/column37-hover.png'); }
+
+div.column38 { background-image: url('../IMG/furniture/column38.png'); }
+div.column38:hover { background-image: url('../IMG/furniture/column38-hover.png'); }
+
+div.column39 { background-image: url('../IMG/furniture/column39.png'); }
+div.column39:hover { background-image: url('../IMG/furniture/column39-hover.png'); }
+
+div.column40 { background-image: url('../IMG/furniture/column40.png'); }
+div.column40:hover { background-image: url('../IMG/furniture/column40-hover.png'); }
+
+div.column41 { background-image: url('../IMG/furniture/column41.png'); }
+div.column41:hover { background-image: url('../IMG/furniture/column41-hover.png'); }
+
+div.column42 { background-image: url('../IMG/furniture/column42.png'); }
+div.column42:hover { background-image: url('../IMG/furniture/column42-hover.png'); }
+
+div.column43 { background-image: url('../IMG/furniture/column43.png'); }
+div.column43:hover { background-image: url('../IMG/furniture/column43-hover.png'); }
+
+div.column44 { background-image: url('../IMG/furniture/column44.png'); }
+div.column44:hover { background-image: url('../IMG/furniture/column44-hover.png'); }
+
+div.column45 { background-image: url('../IMG/furniture/column45.png'); }
+div.column45:hover { background-image: url('../IMG/furniture/column45-hover.png'); }
+
+div.column46 { background-image: url('../IMG/furniture/column46.png'); }
+div.column46:hover { background-image: url('../IMG/furniture/column46-hover.png'); }
+
+div.column47 { background-image: url('../IMG/furniture/column47.png'); }
+div.column47:hover { background-image: url('../IMG/furniture/column47-hover.jpg'); }
+
+div.column48 { background-image: url('../IMG/furniture/column48.png'); }
+div.column48:hover { background-image: url('../IMG/furniture/column48-hover.png'); }
+
+div.column49 { background-image: url('../IMG/furniture/column49.png'); }
+div.column49:hover { background-image: url('../IMG/furniture/column49-hover.jpg'); }
+
+div.column50 { background-image: url('../IMG/furniture/column50.png'); }
+div.column50:hover { background-image: url('../IMG/furniture/column50-hover.jpg'); }
+
+div.column51 { background-image: url('../IMG/furniture/column51.png'); }
+div.column51:hover { background-image: url('../IMG/furniture/column51-hover.png'); }
+
+div.column52 { background-image: url('../IMG/furniture/column52.png'); }
+div.column52:hover { background-image: url('../IMG/furniture/column52-hover.jpg'); }
+
+div.column53 { background-image: url('../IMG/furniture/column53.png'); }
+div.column53:hover { background-image: url('../IMG/furniture/column53-hover.jpg'); }
+
+div.column54 { background-image: url('../IMG/furniture/column54.png'); }
+div.column54:hover { background-image: url('../IMG/furniture/column54-hover.png'); }
+
+div.column55 { background-image: url('../IMG/furniture/column55.png'); }
+div.column55:hover { background-image: url('../IMG/furniture/column55-hover.jpg'); }
+
+div.column56 { background-image: url('../IMG/furniture/column56.png'); }
+div.column56:hover { background-image: url('../IMG/furniture/column56-hover.png'); }
+
+div.column57 { background-image: url('../IMG/furniture/column57.png'); }
+div.column57:hover { background-image: url('../IMG/furniture/column57-hover.png'); }
+
+div.column58 { background-image: url('../IMG/furniture/column58.png'); }
+div.column58:hover { background-image: url('../IMG/furniture/column58-hover.png'); }
+
+div.column59 { background-image: url('../IMG/furniture/column59.png'); }
+div.column59:hover { background-image: url('../IMG/furniture/column59-hover.jpg'); }
+
+div.column60 { background-image: url('../IMG/furniture/column60.png'); }
+div.column60:hover { background-image: url('../IMG/furniture/column60-hover.png'); }
+
+div.column61 { background-image: url('../IMG/furniture/column61.png'); }
+div.column61:hover { background-image: url('../IMG/furniture/column61-hover.png'); }
+
+div.column62 { background-image: url('../IMG/furniture/column62.png'); }
+div.column62:hover { background-image: url('../IMG/furniture/column62-hover.jpg'); }
+
+div.column63 { background-image: url('../IMG/furniture/column63.png'); }
+div.column63:hover { background-image: url('../IMG/furniture/column63-hover.png'); }
+
+div.column64 { background-image: url('../IMG/furniture/column64.png'); }
+div.column64:hover { background-image: url('../IMG/furniture/column64-hover.png'); }
+
+div.column65 { background-image: url('../IMG/furniture/column65.png'); }
+div.column65:hover { background-image: url('../IMG/furniture/column65-hover.png'); }
+
+div.column66 { background-image: url('../IMG/furniture/column66.png'); }
+div.column66:hover { background-image: url('../IMG/furniture/column66-hover.png'); }
+
+div.column67 { background-image: url('../IMG/furniture/column67.png'); }
+div.column67:hover { background-image: url('../IMG/furniture/column67-hover.png'); }
+
+div.column68 { background-image: url('../IMG/furniture/column68.png'); }
+div.column68:hover { background-image: url('../IMG/furniture/column68-hover.png'); }
+
+div.column69 { background-image: url('../IMG/furniture/column69.png'); }
+div.column69:hover { background-image: url('../IMG/furniture/column69-hover.png'); }
+
+div.column70 { background-image: url('../IMG/furniture/column70.png'); }
+div.column70:hover { background-image: url('../IMG/furniture/column70-hover.jpg'); }
+
+div.column71 { background-image: url('../IMG/furniture/column71.png'); }
+div.column71:hover { background-image: url('../IMG/furniture/column71-hover.png'); }
+
+div.column72 { background-image: url('../IMG/furniture/column72.png'); }
+div.column72:hover { background-image: url('../IMG/furniture/column72-hover.png'); }
+
+div.column73 { background-image: url('../IMG/furniture/column73.png'); }
+div.column73:hover { background-image: url('../IMG/furniture/column73-hover.png'); }
+
+div.column74 { background-image: url('../IMG/furniture/column74.png'); }
+div.column74:hover { background-image: url('../IMG/furniture/column74-hover.jpg'); }
+
+div.column75 { background-image: url('../IMG/furniture/column75.png'); }
+div.column75:hover { background-image: url('../IMG/furniture/column75-hover.jpg'); }
+
+/* lighting */
+
+.lighting div.column1 { background-image: url('../IMG/lighting/column1.png'); }
+.lighting div.column1:hover { background-image: url('../IMG/lighting/column1-hover.jpg'); }
+
+.lighting div.column2 { background-image: url('../IMG/lighting/column2.png'); }
+.lighting div.column2:hover { background-image: url('../IMG/lighting/column2-hover.jpg'); }
+
+.lighting div.column3 { background-image: url('../IMG/lighting/column3.png'); }
+.lighting div.column3:hover { background-image: url('../IMG/lighting/column3-hover.png'); }
+
+.lighting div.column4 { background-image: url('../IMG/lighting/column4.png'); }
+.lighting div.column4:hover { background-image: url('../IMG/lighting/column4-hover.png'); }
+
+.lighting div.column5 { background-image: url('../IMG/lighting/column5.png'); }
+.lighting div.column5:hover { background-image: url('../IMG/lighting/column5-hover.png'); }
+
+.lighting div.column6 { background-image: url('../IMG/lighting/column6.png'); }
+.lighting div.column6:hover { background-image: url('../IMG/lighting/column6-hover.png'); }
+
+.lighting div.column7 { background-image: url('../IMG/lighting/column7.png'); }
+.lighting div.column7:hover { background-image: url('../IMG/lighting/column7-hover.png'); }
+
+.lighting div.column8 { background-image: url('../IMG/lighting/column8.png'); }
+.lighting div.column8:hover { background-image: url('../IMG/lighting/column8-hover.jpg'); }
+
+.lighting div.column9 { background-image: url('../IMG/lighting/column9.png'); }
+.lighting div.column9:hover { background-image: url('../IMG/lighting/column9-hover.png'); }
+
+.lighting div.column10 { background-image: url('../IMG/lighting/column10.png'); }
+.lighting div.column10:hover { background-image: url('../IMG/lighting/column10-hover.png'); }
+
+.lighting div.column11 { background-image: url('../IMG/lighting/column11.png'); }
+.lighting div.column11:hover { background-image: url('../IMG/lighting/column11-hover.jpg'); }
+
+.lighting div.column12 { background-image: url('../IMG/lighting/column12.png'); }
+.lighting div.column12:hover { background-image: url('../IMG/lighting/column12-hover.png'); }
+
+.lighting div.column13 { background-image: url('../IMG/lighting/column13.png'); }
+.lighting div.column13:hover { background-image: url('../IMG/lighting/column13-hover.png'); }
+
+.lighting div.column14 { background-image: url('../IMG/lighting/column14.png'); }
+.lighting div.column14:hover { background-image: url('../IMG/lighting/column14-hover.png'); }
+
+.lighting div.column15 { background-image: url('../IMG/lighting/column15.png'); }
+.lighting div.column15:hover { background-image: url('../IMG/lighting/column15-hover.jpg'); }
+
+.lighting div.column16 { background-image: url('../IMG/lighting/column16.png'); }
+.lighting div.column16:hover { background-image: url('../IMG/lighting/column16-hover.png'); }
+
+.lighting div.column17 { background-image: url('../IMG/lighting/column17.png'); }
+.lighting div.column17:hover { background-image: url('../IMG/lighting/column17-hover.jpg'); }
+
+.lighting div.column18 { background-image: url('../IMG/lighting/column18.png'); }
+.lighting div.column18:hover { background-image: url('../IMG/lighting/column18-hover.jpg'); }
+
+.lighting div.column19 { background-image: url('../IMG/lighting/column19.png'); }
+.lighting div.column19:hover { background-image: url('../IMG/lighting/column19-hover.jpg'); }
+
+.lighting div.column20 { background-image: url('../IMG/lighting/column20.png'); }
+.lighting div.column20:hover { background-image: url('../IMG/lighting/column20-hover.png'); }
+
+.lighting div.column21 { background-image: url('../IMG/lighting/column21.png'); }
+.lighting div.column21:hover { background-image: url('../IMG/lighting/column21-hover.png'); }
+
+.lighting div.column22 { background-image: url('../IMG/lighting/column22.png'); }
+.lighting div.column22:hover { background-image: url('../IMG/lighting/column22-hover.png'); }
+
+.lighting div.column23 { background-image: url('../IMG/lighting/column23.png'); }
+.lighting div.column23:hover { background-image: url('../IMG/lighting/column23-hover.png'); }
+
+.lighting div.column24 { background-image: url('../IMG/lighting/column24.png'); }
+.lighting div.column24:hover { background-image: url('../IMG/lighting/column24-hover.png'); }
+
+/* accessories */
+
+.accessories div.column1 { background-image: url('../IMG/accessories/column1.png'); }
+.accessories div.column1:hover { background-image: url('../IMG/accessories/column1-hover.png'); }
+
+.accessories div.column2 { background-image: url('../IMG/accessories/column2.png'); }
+.accessories div.column2:hover { background-image: url('../IMG/accessories/column2-hover.jpg'); }
+
+.accessories div.column3 { background-image: url('../IMG/accessories/column3.png'); }
+.accessories div.column3:hover { background-image: url('../IMG/accessories/column3-hover.png'); }
+
+.accessories div.column4 { background-image: url('../IMG/accessories/column4.png'); }
+.accessories div.column4:hover { background-image: url('../IMG/accessories/column4-hover.png'); }
+
+.accessories div.column5 { background-image: url('../IMG/accessories/column5.png'); }
+.accessories div.column5:hover { background-image: url('../IMG/accessories/column5-hover.png'); }
+
+.accessories div.column6 { background-image: url('../IMG/accessories/column6.png'); }
+.accessories div.column6:hover { background-image: url('../IMG/accessories/column6-hover.jpg'); }
+
+.accessories div.column7 { background-image: url('../IMG/accessories/column7.png'); }
+.accessories div.column7:hover { background-image: url('../IMG/accessories/column7-hover.png'); }
+
+.accessories div.column8 { background-image: url('../IMG/accessories/column8.png'); }
+.accessories div.column8:hover { background-image: url('../IMG/accessories/column8-hover.png'); }
+
+.accessories div.column9 { background-image: url('../IMG/accessories/column9.png'); }
+.accessories div.column9:hover { background-image: url('../IMG/accessories/column9-hover.png'); }
+
+.accessories div.column10 { background-image: url('../IMG/accessories/column10.png'); }
+.accessories div.column10:hover { background-image: url('../IMG/accessories/column10-hover.png'); }
+
+.accessories div.column11 { background-image: url('../IMG/accessories/column11.png'); }
+.accessories div.column11:hover { background-image: url('../IMG/accessories/column11-hover.jpg'); }
+
+.accessories div.column12 { background-image: url('../IMG/accessories/column12.png'); }
+.accessories div.column12:hover { background-image: url('../IMG/accessories/column12-hover.png'); }
+
+.accessories div.column13 { background-image: url('../IMG/accessories/column13.png'); }
+.accessories div.column13:hover { background-image: url('../IMG/accessories/column13-hover.png'); }
+
+.accessories div.column14 { background-image: url('../IMG/accessories/column14.png'); }
+.accessories div.column14:hover { background-image: url('../IMG/accessories/column14-hover.jpg'); }
+
+.accessories div.column15 { background-image: url('../IMG/accessories/column15.png'); }
+.accessories div.column15:hover { background-image: url('../IMG/accessories/column15-hover.jpg'); }
+
+.accessories div.column16 { background-image: url('../IMG/accessories/column16.png'); }
+.accessories div.column16:hover { background-image: url('../IMG/accessories/column16-hover.jpg'); }
+
+.accessories div.column17 { background-image: url('../IMG/accessories/column17.png'); }
+.accessories div.column17:hover { background-image: url('../IMG/accessories/column17-hover.jpg'); }
+
+.accessories div.column18 { background-image: url('../IMG/accessories/column18.png'); }
+.accessories div.column18:hover { background-image: url('../IMG/accessories/column18-hover.png'); }
+
+.accessories div.column19 { background-image: url('../IMG/accessories/column19.png'); }
+.accessories div.column19:hover { background-image: url('../IMG/accessories/column19-hover.png'); }
+
+.accessories div.column20 { background-image: url('../IMG/accessories/column20.png'); }
+.accessories div.column20:hover { background-image: url('../IMG/accessories/column20-hover.jpg'); }
+
+.accessories div.column21 { background-image: url('../IMG/accessories/column21.png'); }
+.accessories div.column21:hover { background-image: url('../IMG/accessories/column21-hover.jpg'); }
+
+section.designers div {
+    width: 50%;
+    height: 500px;
+    float: left;
+}
+
+div#designer-profile {
+    background: #DCC4B2;
+    background-image: url('../IMG/index/accessories-left.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#story {
+    text-align: center;
+}
+
+#story div.interior {
+    width: 90%;
+    margin: 10% 5% 0;
+    background-image: url('../IMG/story/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 47%;
+}
+
+div.row1 {
+    width: 78%;
+    margin: 8% 7% 0% 15%;
+}
+
+div.row1-left {
+    width: 42%;
+    float: left;
+}
+
+div.row2 {
+    width: 100%;
+    background-image: url('../IMG/story/row2-background.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin: 100px 0 150px;
+}
+
+div.row2-right {
+    width: 31%;
+    float: left;
+    margin-right: 7%;
+    margin-left: 7%;
+    padding-top: 280px;
+}
+
+.row3 {
+    width: 900px;
+    margin: 0 auto;
+    background-image: url('../IMG/story/row3-background.png');
+    background-position: 50% 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1000px;
+    padding: 50px;
+}
+
+.row4 {
+    width: 1100px;
+    height: 700px;
+    margin: 80px auto 0px;
+}
+
+div.row4-left {
+    width: 40%;
+    float: left;
+    margin-right: 8%;
+    padding-top: 170px;
+    text-align: right;
+}
+
+div.container-location {
+    width: 1000px;
+    margin: 20px auto 270px;
+}
+
+section.location {
+    padding: 50px;
+}
+
+section.location div.loc {
+    width: 47%;
+    float:left;
+    padding-top: 35%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    transition: all 0.4s ease;
+}
+
+section.location div.loc-margin, section.location h2.loc-margin {
+    margin-right: 6%;
+}
+
+div.loc1 { background-image: url('../IMG/location/loc1.jpg'); }
+
+div.loc2 { background-image: url('../IMG/location/loc2.jpg'); }
+
+div.loc3 { background-image: url('../IMG/location/loc3.jpg'); }
+
+div.loc4 { background-image: url('../IMG/location/loc4.jpg'); }
+
+div.loc5 { background-image: url('../IMG/location/loc5.jpg'); }
+
+div.loc6 { background-image: url('../IMG/location/loc6.jpg'); }
+
+div.loc1:hover { background-image: url('../IMG/location/loc1h.jpg'); }
+
+div.loc2:hover { background-image: url('../IMG/location/loc2h.jpg'); }
+
+div.loc3:hover { background-image: url('../IMG/location/loc3h.jpg'); }
+
+div.loc4:hover { background-image: url('../IMG/location/loc4h.jpg'); }
+
+div.loc5:hover { background-image: url('../IMG/location/loc5h.jpg'); }
+
+div.loc6:hover { background-image: url('../IMG/location/loc6h.jpg'); }
+
+/***** IMAGES *****/
+
+nav img {
+    width: 200px;
+}
+
+.furniture .right img, .furniture .left img, .lighting2 .left img, .accessories2 .right img, .feat-lighting img, .feat-accessories img {
+    width: 100%;
+}
+
+.furniture .left img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+div.feat-furniture .right img.title {
+    width: 88%;
+    margin-left: 6%;
+    margin-top: 130px;
+}
+
+div.feat-furniture .right img.image {
+    width: 100%;
+    margin-top: 50px;
+}
+
+div.feat-lighting .left img.title {
+    margin-top: 70px;
+}
+
+div.feat-accessories .left img.title {
+    margin-top: 100px;
+}
+
+.container-designers img, .beginning .left img, img.title-header {
+    width: 100%;
+}
+
+.container-locations img {
+    width: 100%;
+    margin-bottom: 17px;
+}
+
+
+
+.row1-left img {
+    width: 100%;
+    margin-top: 130px;
+    margin-bottom: 30px;
+}
+
+.row1 > img {
+    width: 58%;
+}
+
+.row2 > img {
+    width: 48%;
+    float: left;
+    margin-left: 7%;
+}
+
+.row2-right img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.row3 img.designers {
+    width: 100%;
+}
+
+.row3 img.creatives {
+    width: 70%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.row4-left img.northern {
+    width: 100%;
+}
+
+.row4-left img.logo {
+    width: 140px;
+    margin-top: 10px;
+}
+
+.row4 > img {
+    width: 52%;
+}
+
+/***** TEXTS *****/
+
+.furniture .right p, .lighting2 .left p, .accessories2 .right p {
+    font-style: italic;
+    line-height: 30px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+div.feat-furniture .right h1, div.feat-lighting .left h1, div.feat-accessories .left h1 {
+    margin-top: 10px;
+    color: #232323;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+div.feat-furniture .right h1 {
+    width: 88%;
+    margin-left: 6%;
+}
+
+div.feat-furniture .right p, div.feat-lighting .left p, div.feat-accessories .left p {
+    margin-top: 30px;
+    color: #232323;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 30px;
+    text-align: justify;
+}
+
+div.feat-furniture .right p {
+    width: 88%;
+    margin-left: 6%;
+}
+
+.furniture .right p, .lighting2 .left p, .accessories2 .right p {
+    margin: 40px 0px 40px;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.furniture .right span, .lighting2 .left span, .accessories2 .right span, .feat-furniture .right span, .feat-lighting .left span{
+    font-weight: 800;
+}
+
+.box-designers p {
+    width: 53%;
+    margin-left: 47%;
+    color: #fff;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 30px;
+    text-align: justify;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.beginning .left p {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #232323;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 30px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+h1.title {
+    font-weight: 700;
+    font-size: 80px;
+    color: #232323;
+    padding-top: 100px;
+    letter-spacing: 6px;
+}
+
+p.subtitle {
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 3px;
+    padding-left: 70px;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+section#products h2 {
+    width: 30%;
+    float: left;
+    font-style: italic;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 10px 0 50px;
+    color: #232323;
+    text-transform: uppercase;
+}
+
+section#products h2.margin {
+    margin-right: 5%;
+}
+
+section#products span {
+    font-weight: 700;
+    font-size: 10px;
+}
+
+#story div.text {
+    width: 50%;
+    float: left;
+    padding-top: 35px;
+}
+
+#story h1 {
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #232323;
+}
+
+#story p {
+    text-align: justify;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 35px;
+    font-weight: 500;
+    color: #232323;
+}
+
+#story p.white {
+    color: #fff;
+}
+
+#story span {
+    font-weight: 700;
+}
+
+.row3 p {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.row4-left p.row4-text {
+    margin-top: 20px; 
+}
+
+section.location h2 {
+    width: 47%;
+    float:left;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 19px;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: #232323;
+}
+
+section.location span {
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0px;
+}
+
+/***** BUTTONS *****/
+
+.furniture .right a, .lighting2 .left a, .accessories2 .right a, div.designers a, .beginning .left a, .container-locations a {
+    text-align: right;
+    text-decoration: none;
+    width: 100%;
+}
+
+.furniture .right a div, .lighting2 .left a div, .accessories2 .right a div, div.designers a div, .beginning .left a div {
+    padding: 10px 20px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid #fff;
+    display: inline-block;
+    text-align: right;
+    transition: all 0.4s ease;
+}
+
+.beginning .left a div {
+    color: #232323;
+    border: 2px solid #232323;
+}
+
+.furniture .right a div:hover, .lighting2 .left a div:hover, .accessories2 .right a div:hover , div.designers a div:hover{
+    background: #fff;
+    color: #4E6F7F;
+}
+
+.beginning .left a div:hover {
+    background: #232323;
+    color: #fff;
+}
+
+.container-locations a div {
+    padding: 15px 31px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #232323;
+    font-weight: 600;
+    border: 2px solid #232323;
+    display: inline-block;
+    text-align: right;
+    transition: all 0.4s ease;
+}
+
+.container-locations a div:hover{
+    background: #232323;
+    color: #fff;
+}
+
+/***** FOOTER *****/
+
+footer {
+    margin-top: 50px;
+    padding: 0 100px;
+    height: 220px;
+    position: relative;
+}
+
+footer.index {
+    background: #C8D1C9;
+    margin-top: 0;
+}
+
+footer .container {
+    background: #E2E2E2;
+    padding: 40px;
+    height: 100%;
+}
+
+footer #index {
+    background: #C8D1C9;
+}
+
+footer .container div {
+    width: 50%;
+    float: left;
+}
+
+footer img {
+    width: 200px;
+}
+
+footer h1 {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 150px;
+    color: #232323;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+footer .container .right {
+    text-align: right;
+}
+
+footer .right a {
+    display: block;
+    text-decoration: none;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #232323;
+    margin-bottom: 6px;
+    transition: all 0.4s ease;
+}
+
+footer .right a:hover {
+    color: #B7B7B7;
+}
+
+/***** DESIGNERS *****/
+
+.designers .container {
+    position: relative;
+    overflow: hidden;
+    margin: 50px auto;
+    width: 100%;
+    height: 500px;
+}
+
+.designers .container img {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    z-index: -60;
+}
+
+.designers .container li img {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: -50;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    height: 100%;
+    width: auto;
+}
+
+.designers ul {
+    width: 100%;
+    height: 500px;
+    list-style: none;
+}
+
+.designers li a {
+    z-index: 1;
+    display: block;
+    padding-left: 0px;
+    width: 200px;
+    height: 30px;
+    background: white;
+    color: #232323;
+    text-decoration: none;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.designers li:nth-child(1) {
+    padding-top: 0px;
+}
+
+.designers li a:hover {
+    color: #D1D1D1;
+}
+
+.designers li a:hover + img {
+    left: 25%;
+}

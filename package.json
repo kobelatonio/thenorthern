@@ -1,0 +1,16 @@
+{
+    "name": "Northern",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "deploy": "gh-pages -d dist"
+    },
+    "keywords": [],
+    "author": "Kobe Latonio",
+    "license": "MIT",
+    "homepage": "https://kobelatonio.github.io/thenorthern",
+    "dependencies": {
+        "gh-pages": "^2.2.0"
+    }
+}
