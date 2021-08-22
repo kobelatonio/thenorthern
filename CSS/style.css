@@ -1,0 +1,1125 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+html {
+    font-size: 1.5vw;
+}
+
+img {
+    width: 100%;
+}
+
+/***** NAVIGATION BAR *****/
+
+nav {
+    padding: 0.5vw 2vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+	flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .4s ease;
+    z-index: 100;
+    background-color: rgba(35, 35, 35, 0);
+}
+
+nav .logo {
+    flex-basis: 20%;
+}
+
+nav .small-logo {
+    width: 10vw;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+header ul li {
+    display: block;
+}
+
+header ul li a {
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    font-size: 0.6rem;
+    padding: 0.5vw 1vw;
+    margin: 1vw 1vw;
+    color: rgba(255, 255, 255, 1);
+    transition: all .4s ease;
+    font-weight: 600;
+    font-style: italic;
+    display: block;
+}
+
+header ul li a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+header ul li a.active {
+    border: 0.2vw #fff solid;
+}
+
+header .toggle {
+    display: none;
+    flex: 0 0 50%;
+    text-align: right;
+}
+
+header .toggle h1 {
+    font-size: 1.6rem;
+    color: white;
+    line-height: 1rem;
+}
+
+header .colored-nav {
+    background-color: rgba(35, 35, 35, 1);
+}
+
+/***** HEADER *****/
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+header.story {
+  background: linear-gradient(to bottom, rgba(78, 111, 127, 0.7), rgba(78, 111, 127, 0.7)), url('../IMG/story/header.jpg');
+}
+
+header.designers {
+    background-image: url('../IMG/designers/header.jpg');
+}
+
+header.locations {
+    background-image: url('../IMG/location/header.jpg');
+}
+
+header.misc {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#video-index {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .center-index {
+    width: 50vw;
+    position: relative;
+}
+
+header .center {
+    width: 80vw;
+    position: relative;
+}
+
+header .center h1 {
+    color: transparent;
+    font-size: 5.5rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    -webkit-text-stroke: 0.2vw #fff;
+}
+
+header .large-logo {
+    width: 100%;
+}
+
+header p {
+    letter-spacing: 0.25rem;
+    font-style: italic;
+    font-size: 1rem;
+    color: white;
+    text-align: right;
+}
+
+/*** MAIN SECTIONS ***/
+
+.furniture, .lighting2, .accessories2 {
+    background: #4E6F7F;
+    text-align: center;
+}
+
+.container-furniture, .container-lighting, .container-accessories {
+    width: 100%;
+    padding: 0 10vw;
+    margin: 0 auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10vw;
+}
+
+.furniture .left, .lighting2 .right, .accessories2 .left {
+    flex: 1;
+}
+
+.furniture .left img, .lighting2 .right img, .accessories2 .left img {
+    vertical-align: middle;
+}
+
+.furniture .left img {
+    padding-top: 25vw;
+}
+
+.lighting2 .right img {
+    padding-top: 10vw;
+}
+
+.accessories2 .left img {
+    padding-top: 15vw;
+}
+
+.furniture .right, .lighting2 .left, .accessories2 .right {
+    flex: 1;
+    text-align: left;
+    display: flex;
+}
+
+.furniture .right .content, .lighting2 .left .content, .accessories2 .right .content {
+    align-self: center;
+}
+
+.furniture .right .content h1, .lighting2 h1, .accessories2 h1, .designers2 h1, .story .row2 .right h1, .story .row3 .texts h1 {
+    color: #fff;
+    font-size: 2.75rem;
+    font-weight: 600;
+    letter-spacing: 0.4rem;
+    line-height: 3.5rem;
+}
+
+.story .row2 .right h1, .story .row3 .texts h1 {
+    letter-spacing: 0.25rem;
+    margin-top: 2vw;
+}
+
+.furniture .right p, .lighting2 .left p, .accessories2 .right p, .designers2 p, .story .row2 .right p, .story .row3 .texts p {
+    line-height: 1.75rem;
+    font-size: 0.625rem;
+    letter-spacing: 0.05rem;
+    margin: 1vw 0px 3vw;
+    color: white;
+    text-align: justify;
+}
+
+.story .row2 .right p, .story .row3 .texts p {
+    margin: 1vw 0 0;
+}
+
+.furniture .right a, .lighting2 .left a, .accessories2 .right a, div.designers2 a, .beginning .left a, .container-locations a {
+    text-decoration: none;
+}
+
+.furniture .right a div, .lighting2 .left a div, .accessories2 .right a div, div.designers2 a div, .beginning .left a div, .container-locations a div {
+    padding: 0.75vw 1.5vw;
+    font-size: 0.5rem;
+    letter-spacing: 0.15rem;
+    color: #fff;
+    border: 0.2vw solid #fff;
+    display: inline-block;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+}
+
+.beginning .left a div, .container-locations a div {
+    color: #232323;
+    border: 0.2vw solid #232323;
+    font-weight: 600;
+}
+
+.furniture .right a div:hover, .lighting2 .left a div:hover, .accessories2 .right a div:hover , .designers2 a div:hover{
+    background: #fff;
+    color: #4E6F7F;
+}
+
+.beginning .left a div:hover, .container-locations a div:hover {
+    background: #232323;
+    color: #fff;
+}
+
+/*** FEATURED AND DESIGNERS ***/
+
+.feat-furniture, .feat-lighting, .feat-accessories, .beginning {
+    width: 100%;
+    display: flex;
+}
+
+.feat-furniture .left, .feat-lighting .right, .feat-accessories .left, .beginning .right {
+    flex: 0 0 45%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.feat-furniture .left {
+    background-image: url('../IMG/index/outline-background.png');
+}
+
+.feat-lighting .right {
+    background-image: url('../IMG/index/pendant-background.png');
+}
+
+.feat-accessories .left {
+    background-image: url('../IMG/index/twine-background.png');
+}
+
+.beginning .right {
+    background-image: url('../IMG/index/beginning.jpg');
+}
+
+.feat-furniture .right, .feat-accessories .right {
+    flex: 0 0 55%;
+    text-align: center;
+    padding: 8vw;
+}
+
+.feat-lighting .left {
+    flex: 0 0 55%;
+    text-align: center;
+    padding: 0 8vw 8vw;
+}
+
+.beginning .left {
+    flex: 0 0 55%;
+    text-align: left;
+    padding: 8vw;
+}
+
+.feat-furniture .right h1, .feat-lighting .left h1, .feat-accessories .right h1, .beginning .left h1, .story .row4 .left h1 {
+    font-size: 2.75rem;
+    font-weight: 600;
+    letter-spacing: 0.25rem;
+    color: #232323;
+}
+
+.feat-furniture .right h2, .feat-lighting .left h2, .feat-accessories .right h2 {
+    line-height: 1.75rem;
+    font-size: 0.625rem;
+    letter-spacing: 0.05rem;
+    color: #232323;
+    font-style: italic;
+}
+
+.feat-furniture .right img.image, .feat-accessories .right img.image {
+    margin: 2vw 0 0;
+}
+
+.feat-lighting .left img.image {
+    margin: 0;
+}
+
+.feat-furniture .right p, .feat-lighting .left p, .feat-accessories .right p, .beginning p, .story .row1 .left p, .story .row4 .left p {
+    color: #232323;
+    text-align: justify;    
+    line-height: 1.75rem;
+    font-size: 0.625rem;
+    letter-spacing: 0.025rem;
+    margin: 1.5vw 0 0;
+}
+
+.story .row4 .left p {
+    margin: 1vw 0;
+}
+
+.feat-lighting .left p {
+    margin: 2.5vw 0 0;
+}
+
+.beginning p {
+    margin: 1vw 0 3vw;
+}
+
+span.bold{
+    font-weight: 700;
+}
+
+span.italic{
+    font-style: italic;
+    font-weight: 600;
+}
+
+span.italic-header{
+    font-style: italic;
+    font-weight: 700;
+}
+
+.designers2 {
+    width: 100%;
+    background-color: #4E6F7F;
+    padding: 5vw;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+
+.designers2 .left {
+    flex: 3;
+}
+
+.designers2 .right {
+    flex: 1;
+    display: flex;
+}
+
+.designers2 .right .content {
+    align-self: center;
+}
+
+.locations2 {
+    width: 100%;
+    height: 130vh;
+    background-image: url('../IMG/index/locations.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+}
+
+.container-locations {
+    text-align: center;
+    position: absolute;
+    bottom: 5vw;
+    left: 0;
+    right: 0;
+}
+
+.locations2 h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    color: #232323;
+    margin-bottom: 0.5vw;
+}
+
+/*** PRODUCTS ***/
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex: 1 0 33%;
+    padding: 3vw;
+}
+
+.product:nth-child(odd) {
+    background: #f5f5f5;
+}
+
+.product:nth-child(even) {
+    background: #fff;
+}
+
+#products h2 {
+    font-style: italic;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+    margin: 0.1vw 0 0.5vw;
+    color: #232323;
+    text-transform: uppercase;
+}
+
+#products span {
+    font-weight: 700;
+    font-size: 0.55rem;
+}
+
+/*** DESIGNERS ***/
+
+.designers {
+    display: flex;
+}
+
+.designers .details {
+    display: none;
+}
+
+.designers .list {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    background: #f5f5f5;
+    padding: 3vw;
+}
+
+.designers .designer {
+    padding: 0.7vw 0;
+    transition: all 0.2s ease;
+}
+
+.designers .designer h1 {
+    color: #232323;
+    font-size: 0.75rem;
+    transition: all 0.2s ease;
+}
+
+.designers .name {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.designers .active, .designers .name:hover {
+    opacity: 1;
+}
+
+.designers .container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.designers .container img {
+    vertical-align: middle;
+}
+
+.designers .container .left, .designers .container .right {
+    flex: 1;
+}
+
+.designers .container .left {
+    align-self: flex-end;
+}
+
+.designers .container h2 {
+    color: #232323;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3.9rem;
+    padding: 3vw;
+}
+
+.designers .container p {
+    line-height: 1.75rem;
+    font-size: 0.625rem;
+    letter-spacing: 0.05rem;
+    color: #232323;
+    text-align: justify;
+    padding: 3vw;
+    font-weight: 600;
+}
+
+.designers .sample {
+    position: relative;
+}
+
+.designers .sample h3 {
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    text-align: right;
+    color: white;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+    margin: 0.1vw 0 0.5vw;
+    text-shadow: 0.1vw 0.1vw 0.1vw rgba(35, 35, 35, 0.75);
+}
+
+.designers .sample span {
+    font-weight: 500;
+    font-size: 0.55rem;
+    font-style: italic;
+}
+
+/*** STORY ***/
+
+.story .row1 {
+    width: 100%;
+    padding: 15vw 15vw 10vw;
+    display: flex;
+    align-items: center;
+}
+
+.story .row1 .left, .story .row1 .right {
+    flex: 1;
+}
+
+.story .row1 .left h1 {
+    font-size: 2.75rem;
+    font-weight: 600;
+    letter-spacing: 0.25rem;
+    color: #232323;
+    text-align: left;
+    line-height: 3.5rem;
+}
+
+.story .row2 {
+    width: 100%;
+    background-image: url('../SVG/perspectives.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7.5vw;
+    padding: 0 7.5vw;
+    align-items: center;
+    margin-bottom: 12.5vw;
+    position: relative;
+}
+
+.story .row2 .left {
+    flex: 5
+}
+
+.story .row2 .right {
+    flex: 4;
+}
+
+.story .row3 {
+    margin: 0 15vw;
+    padding: 0 5vw;
+    background-image: url('../SVG/creatives.svg');
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.story .row3 .texts {
+    padding: 2.5vw 11.5vw 10vw;
+}
+
+.story .row4 {
+    display: flex;
+    margin: 10vw;
+    flex-wrap: wrap;
+    gap: 8vw;
+    align-items: center;
+}
+
+.story .row4 .left, .story .row4 .right {
+    flex: 1;
+}
+
+.story .row4 .right img {
+    vertical-align: middle;
+}
+
+.story .row4 .left div {
+    text-align: right;
+    margin-top: 1vw;
+}
+
+.story .row4 .left div .black-logo, .story .row4 .left div .logo {
+    width: 30%;
+}
+
+.story .row4 .left div .logo {
+    display: none;
+}
+
+/*** LOCATIONS ***/
+
+.locations {
+    padding: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+
+.locations .location {
+    flex: 1 0 45%;
+}
+
+.locations .location .image {
+    padding-top: 27.5vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+}
+
+.locations h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+    color: #232323;
+    line-height: 2rem;
+    margin: 2vw 0 0;
+}
+
+.locations p {
+    letter-spacing: 0.01rem;
+    color: #232323;
+    font-weight: 600;
+    font-size: 0.7rem;
+    line-height: 1.25rem;
+}
+
+.locations span.appointment {
+    font-style: italic;
+    letter-spacing: 0.05rem;
+    color: #232323;
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 2.5rem;
+}
+
+.image1 { background-image: url('../IMG/location/loc1.jpg'); }
+.image2 { background-image: url('../IMG/location/loc2.jpg'); }
+.image3 { background-image: url('../IMG/location/loc3.jpg'); }
+.image4 { background-image: url('../IMG/location/loc4.jpg'); }
+.image5 { background-image: url('../IMG/location/loc5.jpg'); }
+.image6 { background-image: url('../IMG/location/loc6.jpg'); }
+
+.image1:hover { background-image: url('../IMG/location/loc1h.jpg'); }
+.image2:hover { background-image: url('../IMG/location/loc2h.jpg'); }
+.image3:hover { background-image: url('../IMG/location/loc3h.jpg'); }
+.image4:hover { background-image: url('../IMG/location/loc4h.jpg'); }
+.image5:hover { background-image: url('../IMG/location/loc5h.jpg'); }
+.image6:hover { background-image: url('../IMG/location/loc6h.jpg'); }
+
+/***** FOOTER *****/
+
+footer {
+    padding: 3vw 5vw;
+}
+
+footer.index {
+    background: #C8D1C9;
+    margin-top: 0;
+}
+
+footer #index {
+    background: #C8D1C9;
+    display: flex;
+}
+
+footer .logo {
+    flex: 1;
+}
+
+footer .footer-logo {
+    width: 20vw;
+}
+
+footer h1 {
+    text-align: right;
+    align-self: center;
+    flex: 1;
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: #232323;
+    letter-spacing: 0.05rem;
+    line-height: 1.1rem;
+}
+
+footer .container .right {
+    text-align: right;
+}
+
+footer .right a {
+    display: block;
+    text-decoration: none;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #232323;
+    margin-bottom: 6px;
+    transition: all 0.4s ease;
+}
+
+footer .right a:hover {
+    color: #B7B7B7;
+}
+
+/*** TABLETS ***/
+
+@media (max-width: 991px) {
+    html {
+        font-size: 2.5vw;
+    }
+    
+    nav .logo {
+        flex: 0 0 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    nav .small-logo {
+        width: 25vw;
+    }
+    
+    header .center {
+        width: 80vw;
+    }
+    
+    nav {
+/*        display: block;*/
+        background: #232323;
+        padding: 2vw;
+    }
+    
+    nav ul {
+        display: none;
+        flex: 0 0 100%;
+    }
+    
+    nav ul li {
+        text-align: center;
+    }
+    
+    nav ul li a {
+        padding: 2vw 2vw;
+    }
+    
+    header .toggle, .active-list {
+        display: block;
+    }
+    
+    header .center-index {
+        width: 80vw;
+    }
+    
+    .furniture .right, .lighting2 .left, .accessories2 .right, .feat-furniture .right, .feat-accessories .right, .feat-lighting .left, .beginning .left, .designers2 .right {
+        flex: 0 0 100%;
+    }
+    
+    .feat-furniture .right, .feat-accessories .right, .designers2, .beginning .left {
+        padding: 15vw;
+    }
+    
+    .feat-lighting .left {
+        padding: 0 15vw 15vw;
+    }
+
+    .container-furniture, .container-lighting, .container-accessories {
+        flex-flow: row wrap;
+        padding: 15vw 15vw 0vw;
+    }
+
+    .feat-furniture, .feat-accessories, .feat-lighting, .beginning, .designers2 {
+        flex-flow: row wrap;
+    }
+
+    .container-furniture, .container-accessories, .feat-furniture, .feat-accessories, .beginning {
+        flex-direction: column-reverse;
+    }
+    
+    .feat-furniture .left, .feat-lighting .right, .feat-accessories .left, .beginning .right {
+        padding-top: 80vh;
+        flex: 0 0 100%;
+    }
+    
+    .furniture .left img, .lighting2 .right img, .accessories2 .left img {
+        padding-top: 0;
+    }
+    
+    .furniture .right p, .lighting2 .left p, .accessories2 .right p, .designers2 p, .beginning p {
+        margin: 2vw 0 5vw;
+    }
+    
+    .feat-furniture .right p, .feat-lighting .left p, .feat-accessories .right p {
+        margin: 2vw 0 0;
+    }
+    
+    .locations2 {
+        height: 80vh;
+    }
+    
+    .container-locations {
+        bottom: 10vw;
+    }
+    
+    footer {
+        padding: 5vw 10vw;
+    }
+    
+    footer .footer-logo {
+        width: 25vw;
+    }
+    
+    /*** PRODUCTS ***/
+    
+    header .center h1 {
+        font-size: 3.2rem;
+        letter-spacing: 0.6rem;
+        -webkit-text-stroke: 0.15vw #fff;
+    }
+
+    #products h2 {
+        font-size: 0.6rem;
+        letter-spacing: 0.04rem;
+    }
+
+    #products span {
+        font-size: 0.4rem;
+    }
+    
+    .designers {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .designers .list {
+        padding: 4vw 5vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1vw 3vw;
+    }
+    
+    .designers .container h2 {
+        font-size: 2.5rem;
+        line-height: 3.75rem;
+    }
+    
+    .designers .container p {
+        padding: 2.5vw 3.5vw;
+        letter-spacing: 0;
+    }
+    
+    .story .row1 {
+        flex-direction: column;
+        gap: 10vw;
+        padding: 15vw;
+    }
+    
+    .story .row2 {
+        display: block;
+        padding: 0 15vw 0 0;
+        background: none;
+        margin: 0;
+    }
+    
+    .story .row2 .right {
+        position: absolute;
+        top: 10vw;
+        left: 10vw;
+        padding: 5vw;
+        background: #4E6F7F;
+    }
+    
+    .story .row2 .right h1 {
+        margin-top: 0;
+    }
+    
+    .story .row3 {
+        margin: 0;
+        padding: 15vw;
+        background: none;
+    }
+    
+    .story .row3 .texts {
+        text-align: center;
+        padding: 2.5vw 0 0;
+    }
+    
+    .story .row3 .texts h1, .story .row3 .texts p {
+        color: #232323;
+    }
+    
+    .story .row4 {
+        margin: 0;
+        position: relative
+    }
+    
+    .story .row4 .left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 15vw;
+    }
+    
+    .story .row4 .left h1, .story .row4 .left p {
+        color: #fff;
+    }
+
+    .story .row4 .left div .black-logo {
+        display: none;
+    }
+
+    .story .row4 .left div .logo {
+        display: inline-block;
+    }
+    
+    .locations {
+        padding: 5vw;
+    }
+    
+    .locations h1 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+    .locations p {
+        font-size: 0.6rem;
+    }
+    
+    .locations span.appointment {
+        font-size: 0.7rem;
+        line-height: 2rem;
+    }
+}
+
+/*** LANDSCAPE PHONES ***/
+
+@media (max-width: 767px) {
+    html {
+        font-size: 3vw;
+    }
+    
+    .container-locations {
+        bottom: 10vw;
+    }
+    
+    nav .small-logo {
+        width: 30vw;
+    }
+    
+    header .center h1 {
+        font-size: 2.8rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .product {
+        flex: 1 0 100%;
+        padding: 10vw;
+    }
+
+    #products h2 {
+        font-size: 0.9rem;
+        letter-spacing: 0.04rem;
+    }
+
+    #products span {
+        font-size: 0.6rem;
+    }
+    
+    .story .row1, .story .row3, .story .row4 .left {
+        padding: 10vw;
+    }
+    
+    .story .row2 {
+        padding: 0 10vw 0 0;
+    }
+    
+    .locations {
+        padding: 10vw;
+        gap: 10vw;
+    }
+    
+    .locations .location {
+        flex: 1 0 100%;
+    }
+    
+    .locations .location .image {
+        padding-top: 50vw;
+    }
+}
+
+/*** PORTRAIT PHONES ***/
+
+@media (max-width: 575px) {
+    html {
+        font-size: 4vw;
+    }
+    
+    nav {
+        padding: 5vw;
+    }
+    
+    .furniture .right .content h1, .lighting2 h1, .accessories2 h1, .designers2 h1, .feat-furniture .right h1, .feat-lighting .left h1, .feat-accessories .right h1, .beginning .left h1 {
+        font-size: 1.9rem;
+        letter-spacing: 0.2rem;
+    }
+    
+    .feat-furniture .right, .feat-accessories .right, .designers2, .beginning .left {
+        padding: 10vw;
+    }
+    
+    .feat-lighting .left {
+        padding: 0 10vw 10vw;
+    }
+
+    .container-furniture, .container-lighting, .container-accessories {
+        padding: 10vw 10vw 0vw;
+    }
+    
+    .furniture .right a, .lighting2 .left a, .accessories2 .right a, div.designers2 a, .beginning .left a, .container-locations a {
+        text-align: right;
+    }
+    
+    footer h1 {
+        font-size: 0.4rem;
+        line-height: 0.8rem;
+    }    
+    
+    header .center h1 {
+        font-size: 2.2rem;
+        letter-spacing: 0.3rem;
+    }
+    
+    .designers .list {
+        padding: 6vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2vw 4vw;
+        justify-content: center;
+    }
+    
+    .designers .container {
+        flex-direction: column;
+    }
+    
+    .designers .container .right {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    
+    .designers .container h2 {
+        text-align: center;
+    }
+    
+    .designers .container p, .designers .container h2 {
+        padding: 7.5vw;
+    }
+    
+    .story h1 {
+        font-size: 2.25rem !important;
+    }
+    
+    .story .row2 {
+        padding: 0;
+    }
+    
+    .story .row2 {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    
+    .story .row2 .right {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 10vw;
+    }
+}
